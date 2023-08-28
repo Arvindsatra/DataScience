@@ -1,0 +1,13 @@
+,antecedents,consequents,support,confidence
+0,Milk,KB,0.6,1
+1,Mushrrom,KB,0.8,1
+2,frozenset({'KB'}),frozenset({'Mushrrom'}),0.8,0.8
+3,Onion,KB,0.6,1
+4,yogurt,KB,0.6,1
+5,frozenset({'Mushrrom'}),frozenset({'Onion'}),0.6,0.75
+6,Onion,Mushrrom,0.6,1
+7,"frozenset({'Mushrrom', 'KB'})",frozenset({'Onion'}),0.6,0.75
+8,"Mushrrom, Onion",KB,0.6,1
+9,"KB, Onion",Mushrrom,0.6,1
+10,frozenset({'Mushrrom'}),"frozenset({'KB', 'Onion'})",0.6,0.75
+11,Onion,"Mushrrom, KB",0.6,1

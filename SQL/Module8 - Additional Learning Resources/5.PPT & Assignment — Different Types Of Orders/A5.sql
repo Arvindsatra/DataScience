@@ -1,0 +1,84 @@
+CREATE DATABASE A5
+
+
+CREATE TABLE ORDERS(ORDER_ID INT,ORDER_DATE DATE,AMOUNT INT, CUSTOMER_ID INT);
+
+INSERT INTO ORDERS VALUES(3,'2020-10-01',9000,20),
+						(110,'2020-10-01',9000,10),
+						(111,'2020-10-02',8000,2),
+						(112,'2020-10-03',7000,3),
+						(113,'2020-10-04',6000,4),
+						(114,'2020-10-05',5000,5);
+
+
+--1.Arrange the ‘Orders’ dataset in decreasing order of amount
+
+
+--ORDER BY 
+
+SELECT * FROM ORDERS ORDER BY AMOUNT DESC
+
+
+SELECT * FROM ORDERS ORDER BY AMOUNT ASC
+
+
+
+--2.Create a table with name ‘Employee_details1’ and comprising of these columns – ‘Emp_id’, ‘Emp_name’, ‘Emp_salary’.
+--Create another table with name ‘Employee_details2’, which comprises of same columns as first table.
+
+
+CREATE TABLE EMPLOYEE_DETAILS1(EMP_ID INT , EMP_NAME VARCHAR(20) , EMP_SALARY INT)
+
+INSERT INTO EMPLOYEE_DETAILS1 VALUES(1,'FRANICS',5000),
+									(2,'SUMIT',6000),
+									(3,'ANITHA',7000),
+									(4,'KUNAL',7000)
+
+
+CREATE TABLE EMPLOYEE_DETAILS2(EMP_ID INT , EMP_NAME VARCHAR(20) , EMP_SALARY INT)
+
+INSERT INTO EMPLOYEE_DETAILS2 VALUES(4,'KUNAL',7000),
+									(1,'FRANICS',5000),
+									(5,'JOEL',9000),
+									(7,'BIK',11000)
+
+
+
+--SET OPEARTORS 
+
+COMBINE 2 SQL QUERIES INTO SINGLE OUTPUT
+
+UNION
+UNION ALL
+INTERSECT
+EXCEPT
+
+--3.Apply the union operator on these two tables
+
+SELECT * FROM EMPLOYEE_DETAILS1
+UNION
+SELECT * FROM EMPLOYEE_DETAILS2
+
+
+
+
+
+--4.Apply the intersect operator on these two tables
+
+SELECT * FROM EMPLOYEE_DETAILS1
+INTERSECT
+SELECT * FROM EMPLOYEE_DETAILS2
+
+
+
+--5.Apply the except operator on these two tables
+
+SELECT * FROM EMPLOYEE_DETAILS1
+EXCEPT
+SELECT * FROM EMPLOYEE_DETAILS2
+
+
+SELECT * FROM EMPLOYEE_DETAILS2
+EXCEPT
+SELECT * FROM EMPLOYEE_DETAILS1
+
