@@ -1,0 +1,541 @@
+Page 1:
+_AntelliPaat
+
+Data Science ij
+with Python
+
+Dimensionality Reduction
+
+Copyright Intellipaat. All rights reserved
+
+
+Page 2:
+_dntelliPact A gen da
+
+01 What is Dimensionality Benefits of Dimensionality
+
+Reduction? Reduction
+Principal Component How does PCA
+Analysis (PCA) work?
+
+F: ‘Analysi How does Factor
+‘actor Analysié Analysis work?
+Factor Analysis vs PCA os | What is LDA?
+
+09 | How does LDA work?
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 3:
+_dntelliPaat
+
+What is Dimensionality
+Reduction?
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 4:
+What is Dimensionality Reduction? _dntelliPact
+
+,
+The process of converting a dataset of vast dimensions into data with lesser
+
+dimensions to reduce the complexity of data by keeping the relevant
+structure
+
+Jai
+
+Copyright Intellipaat. All rights r
+
+
+
+Page 5:
+What is Dimensionality Reduction? _AntelliPaat
+
+Suppose, we have a table with 10 columns, but around 6 columns might be
+
+useless for our analysis. Thus, we can remove the columns using
+dimensionality reduction
+
+EERE rc Pt ty |
+Dimensionality
+—-| r
+Reduction
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 6:
+What is Dimensionality Reduction? _AntelliPaat
+
+| Components of Dimensionality Reduction |
+
+Feature Elimination Feature Extraction
+
+ntellipaat. Al
+
+
+
+Page 7:
+What is Dimensionality Reduction? _dntelliPact
+
+Removing some variables completely if
+they are:
+
+* Redundant with other variables
+* Not providing any new information
+
+Sets a smaller dataset Might loose some data
+
+1h)
+
+Copyright Intellipaat. All rights reserved.
+
+
+
+Page 8:
+What is Dimensionality Reduction? _dntelliPact
+
+Extracting new variables from old variables
+
+PCA works based on feature extraction. This is the first
+step we do on our preprocessed dataset
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 9:
+_dntelliPaat
+
+Benefits of Dimensionality
+Reduction
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 10:
+Benefits of Dimensionality Reduction _dntelliPact
+
+When we keep on adding features without increasing the training samples, the
+dimension keeps growing. This will give us an overfitted ML model that works great with
+the training data but might fail on new data. This makes the model unpredictable
+
+This is where dimensionality reduction helps!
+We remove irrelevant and redundant features, and we also create new features.
+
+Copyright Intellipaat. All rights reserved,
+
+
+Page 11:
+Benefits of Dimensionality Reduction _AntelliPaat
+
+It decreases the unwanted dimensions in Machine Learning. Each data
+will be saved with little incremental information. The data has to be
+treated to reduce the number of dimensions
+
+When you checking out a bikes dataset, you don’t
+require the below tools. So, they are unwanted.
+
+GPS sensors
+Gyro meters
+
+Flexible
+
+Video feeds
+
+Smart devices
+
+
+
+Page 12:
+Benefits of Dimensionality Reduction _AntelliPaat
+
+Image processing is an application of dimensionality reduction
+
+Which celebrity do you look like?
+
+<7")
+Taylor Swift
+
+
+
+Page 13:
+Benefits of Dimensionality Reduction _AntelliPaat
+
+In short dimensionality reduction helps us reduce the size of data to
+be processed in such a way that it does not affect the performance
+of our model to a large degree
+
+Which celebrity do you look like?
+
+.\—~]
+Taylor Swift
+
+ight Intellipaat. All
+
+
+
+Page 14:
+_dntelliPaat
+
+Principal Component Analysis
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 15:
+Principal Component Analysis _dnteltiPact
+
+PCA is a dimensionality reduction technique used to create a dataset of a
+lower dimension without loosing any valuable information
+
+ns in a dataset
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 16:
+Principal Component Analysis _AntelliPaat
+
+PCA is a dimensionality reduction technique used to create a dataset of a
+lower dimension without loosing any valuable information
+
+Name |Numberof| Color Height | Numberof
+Wheels Seats
+Mercedes 4 Red Afeet 4
+BMW 4 Blue 5
+Marco Polo 6 Blue 10
+Volkswagen 4 White &
+4 Ad
+Has low variance Has high variance
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 17:
+_dntelliPaat
+
+How does PCA work?
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 18:
+How does PCA work? _dntelliPoat
+
+y-axis A A
+A Mmmm Has less variance
+
+|__| A Mm Has more variance
+
+x-axis
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 19:
+How does PCA work? _dntelliPoat
+
+How to fi al component?
+envalues
+
+y-axis Eigenvector
+
+Eigenvalue
+
+x-axis
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 20:
+How does PCA work? _dntelliPoat
+
+2 dimension = 2 eigenvectors
+and 2 eigenvalues
+
+Hours on the Internet (y-axis)
+
+Age (x-axis)
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 21:
+How does PCA work? _dntelliPoat
+
+&
+g
+=
+=
+a
+
+Zz
+
+v new x-axis
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 22:
+How does PCA work? _dntelliPoat
+
+How does PCA reduce the dimensions’
+Hours on Mobile
+
+Age
+
+Hours on the Internet
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 23:
+How does PCA work? _dntelliPoat
+
+Hours on Mobile
+
+ev3
+
+3 dimensions =3
+eigenvectors and 3
+=IENVate
+
+Hours on the Internet
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 24:
+How does PCA work? _dntelliPoat
+
+Vv New x-axis
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 25:
+_dntelliPaat
+
+PCA: Hands On
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 26:
+_dntelliPaat
+
+Factor Analysis
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 27:
+Factor Analysis _dnte Paat
+
+It is a data analysis method we can use to search for significant underlying
+trends or factors from a set of observed variables
+
+It is widely used in market research, finance, and advertising. PCA and CFA
+
+are types of Factor Analysis
+
+Variable 1
+Variable2
+Variable3
+
+Variable4 +—__
+VariableS
+Variable6 =
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 28:
+Factor Analysis _dntelliPoat
+
+Observed Variables
+
+Waiting Time
+Gentes iness
+
+Staff Behavior
+
+Taste of Food
+
+Food Temperature Food Quality
+
+Freshness of Food
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 29:
+_dntelliPaat
+
+How does Factor Analysis work?
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 30:
+How does Factor Analysis work? _AntelliPaat
+
+The purpose of Factor Analysis is to reduce the number of observed
+variables and find unobservable variables
+
+Feature Extraction Feature Rotation
+
+LJ
+
+Approach for extraction selected using Here, we convert factors into
+variance partitioning methods such as uncorrelated factors to improve the
+PCA to calculate no of factors overall interpretability
+
+Copyright Intellipaat. All rights r
+
+
+
+Page 31:
+How does Factor Analysis work? _dntelliPact
+
+Questions to be answered while doing an exploratory Factor Analysi
+: How should the factors b
+' low should the factors be
+tate data sulbable eestor extracted? Which method
+¥ should be used?
+4
+Which rotational method
+should be used?
+How to interpret the data and
+label it?
+
+What criteria will assist in
+determining factor extraction?
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 32:
+_dntelliPaat
+
+Factor Analysis vs PCA
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 33:
+Factor Analysis vs PCA _dntelliPaat
+
+[ 1. PCA components explain the maximum amount of variance, while FA explains the covariance in data
+
+2. PCA components are fully orthogonal to each other, whereas FA does not require factors to be
+orthogonal
+
+3. PCA components is a linear combination of the observed variables, while, in FA, the observed variables
+are linear combinations of the unobserved variable or factor
+
+4, PCA components are uninterpretable. In FA, underlying factors are labelable and interpretable
+5. PCAis a kind of dimensionality reduction method, whereas FA is the latent variable method
+
+6. Although PCA is a type of Factor Analysis, PCA is observational, whereas FA is a modeling technique
+
+Copyright Intellipaat. All rights reser
+
+
+Page 34:
+_dntelliPaat
+
+Factor Analysis: Hands On
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 35:
+_dntelliPaat
+
+What is LDA?
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 36:
+What is LDA? _dntelliPoat
+
+In NLP, the Latent Dirichlet Allocation (LDA) is a generative model that helps in
+explaining the sets of observations by unobserved groups showing why some
+parts of the data are similar. It also helps heavily in topic modeling
+
+What it topic modeling? ]
+
+This is a part of unsupervised NLP, where we can represent a text file using
+several topics that can explain the underlying information of that document
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 37:
+What is LDA? _Ante Paat
+
+_, Clusters of Words
+|= Words/Tokens
+
+Frequency of Words
+
+Collection of Text
+Documents
+
+Distribution of Topics
+
+
+
+Page 38:
+_dntelliPaat
+
+How does LDA work?
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 39:
+How does LDA work? _dntelliPoat
+
+a
+
+Distribution of topics over documents
+
+Bog-of-words (BOW)
+
++
+Bel =|
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 40:
+_dntelliPaat
+
+LDA: Hands On
+
+Copyright Intellipaat. All rights reserved.
+
+
+Page 41:
+intelliPaat
+
+£2) e
+& 5
+
+India: +91-7847955955
+
+US: 1-800-216-8930 (TOLL FREE)
+
+support@intellipaat.com
+
+24/7 Chat with Our Course Advisor
+
+Copyright Intellipaat. All rights reserved,
+
+

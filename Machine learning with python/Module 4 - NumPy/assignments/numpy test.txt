@@ -1,0 +1,210 @@
+﻿1) For a given numpy array, how will you change the dimensions to 5 using the existing parameters in the numpy array. my_array = numpy.array([[[[1,3,4]]]])
+numpy.array(my_array, ndim=1)
+numpy.array(my_array, ndmin=5)
+numpy.array(my_array, ndim= my_array.ndmin + 1)
+numpy.array(my_array, ndim=5)
+  
+
+
+
+2) For the given numpy arrays, Array1 and Array2, what will be the dot product for the same. Array1 = array([[1, 2, 3], [4, 5, 6]]) Array2 = array([[2, 3],[3, 2]])
+array([[ -9, 6, -1],[-12, 18, -7]])
+Valueerror
+None of the Above
+Keyerror
+
+
+3) In a given numpy array, using the slicing operations print the reverse of the array. array = np.array([10,3,1,203,404,204,20,302,30,402,192])
+array1[len(array1):0]
+array[-1:0]
+array1[-1:-len(array1)]
+array[::-1]
+
+
+4) What is the output of the below code:  a = [[1, 0], [0, 1]]  b = [[4, 1], [2, 2]]  np.dot(a, b)
+array([[4, 4],[2, 4]])
+None of the above
+array([[1, 1], [2, 2]])
+array([[4, 1],[2, 2]])
+
+
+5) What is the output of the following code: a = np.arange(3*4*5*6).reshape((3,4,5,6)) b = np.arange(3*4*5*6)[::-1].reshape((5,4,6,3)) np.dot(a, b)[2,3,2,1,2,2]
+399118
+499128
+Value Error
+909128
+
+
+6) What will be output for the following code? import numpy as np a = np.array([3, 7, 32], dtype = complex) print(a)
+[ 3.+0.j 7.+0.j 32.+0.j]
+Error
+[ 3.0+0.j 7.0+0.j 32.0+0.j]
+[ 3.+0.k 7.+0.j 32.+0.l]
+
+
+
+
+
+
+7) How to replace all values greater than a given value with a given cutoff? For example: In array ‘ar1’, replace all values greater than 30 to 30 and less than 10 to 10. Input: np.random.seed(100) ar1 = np.random.uniform(1,50, 20)
+np.where(a < 10, 10, np.where(a > 30, 30, a))
+Both of the above
+np.clip(a, a_min=10, a_max=30)
+None of the above
+
+
+8) For the given arrays, array1 and array2, if we stack the two arrays row wise, what will be the output? array1 = np.array([[1,2],[3,4]]) array2 = np.array([[1,2],[3,4],[5,6],[7,8],[9,10]])
+array([[ 1, 2],[ 3, 4],[ 1, 2],[ 3, 4],[ 5, 6],[ 7, 8],[ 9, 10]])
+array([[ 1, 2, 3, 4],[ 1, 2, 3, 4],[ 5, 6, 7, 8],[ 9, 10]])
+None of the above
+array([[ 1, 2, 3, 4, 1], [2, 3, 4, 5, 6],[ 7, 8, 9, 10]])
+
+
+9) For a given numpy array, how are you going to insert a new value at the specified position? array = np.array([10,3,1,203,404,204,20,302,30,402,192])  Elem_to_be_inserted = [1,2,3,4]  The position to be inserted at = before 404 
+numpy.insert(array1, 4, array2)
+numpy.insert(array2, np.index(404), array2)
+numpy.insert(array1, np.where(404), array2)
+numpy.insert(array2, 404, array2)
+
+
+10) Create a 3x3 matrix using numpy, and all the values of the matrix must be a constant k.
+numpy.random.random((3,3), ‘k’)
+numpy.ones(3,3)
+numpy.eye(‘k’)
+numpy.full((3,3), ‘k’)
+
+
+
+
+11) For the given python code that implements bubble sort, what will be the output for the given numpy array. def bub_sort(array): for i in range(0, len(array)): for j in range(0, len(array) - i - 1): if array[j] < array[j + 1]: temp = array[j] array[j] = array[j + 1] array[j+1] = temp return array my_array = numpy.array([20,14,25,16,45,60,12,9])
+array([60, 45, 25, 20, 16, 14, 12, 9])
+array([60, 45, 20, 25, 16, 14, 12, 9])
+array([ 9, 12, 14, 16, 20, 25, 45, 60])
+array([ 9, 12, 16, 14, 20, 25, 45, 60])
+
+
+
+
+
+
+
+
+
+
+12) For a given numpy array of the shape (2,5) ,How will you reshape the array in the shape (5,2).
+numpy.reshape((2,5) == (5,2))
+numpy.arange(5,2)
+numpy.shape(5,2)
+numpy.reshape(5,2)
+
+
+13) What will be the shape of the sample numpy array after flattening it? Sample = numpy.array([[1,2],[3,4],[5,6],[7,8]])
+array([1], [2], [3], [4], [5], [6], [7], [8])
+array([1, 2, 3, 4, 5, 6, 7, 8])
+None of the above
+array([1, 2], [3, 4], [5, 6], [7, 8])
+
+
+14) In the given array, how can we get the following output - array([2, 5, 8]). Sample = numpy.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15]])
+array[0:3, 1]
+None of the above
+array[0:3][1]
+array[[0:3], [1]]
+
+
+15) Given two numpy arrays, we will perform Horizontally stack the given arrays array1 and array2. What will be the output of the above operation? The sample arrays are as follows. Array1 = numpy.arange(20,2) Array2 = numpy.array([1,2,3,4,5,6,7,8,9,10])
+None of the above
+array([[ 1, 3, 5, 7, 9, 11, 13, 15, 17, 19], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])
+array([ 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+array([[ 1, 3, 5, 7, 9, 11, 13, 15, 17, 19], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])
+
+
+16) For the given arrays, array1 and array2, if we stack the two arrays column wise, what will be the output? array1 = np.array([[1,2],[3,4]]) array2 = np.array([[5,6],[7,8]])
+array([[1, 2, 5, 6 ,3, 4, 7, 8]])
+array([[1, 2, 5, 6],[3, 4, 7, 8]])
+array([[1, 2], [5, 6],[3, 4], [7, 8]])
+None of the above
+
+
+  
+
+
+
+17) Given two vectors A and B, find the cross product between the two vectors. A = numpy.array([[4],[12],[29]]) B = numpy.array([[13],[21],[4]])
+array([[-561 360 -72]])
+array([[-555 361 -72]])
+array([[-560 360 -71]])
+array([[-561 361 -72]])
+
+
+18) Given two vectors A and B, find the correlation coefficient of the following vectors. A = numpy.array([1,3,5,7,9,11,13,15,17,19,21,23,25]) B = numpy.array([0,2,4,6,8,10,12,14,16,18,20, 22, 24])
+array([[1., 1.],[1., 1.]])
+array([[1., 0.],[1., 1.]])
+array([[1., 1.],[0., 1.]])
+array([[0., 1.],[1., 1.]])
+  
+
+
+
+
+
+
+
+
+
+19) Create a nested numpy array from a given dictionary data. sample = {1: [1,2], 2: [[1],[2]], 3: [[1,2], [3,4], [4,5]], 4: [1], 5: [1,2,3,4,5]}
+array([[1, list([1, 1])], [2, list([[1], [2]])], [3, list([[1, 2], [3, 4], [4, 5]])], [4, list([1])], [5, list([1, 2, 3, 4, 5])]], dtype=object)
+array([[1, list([1, 2])], [2, list([[1], [2]])], [3, list([[1, 2], [1, 4], [4, 5]])], [4, list([1])], [5, list([1, 2, 3, 4, 5])]], dtype=object)
+array([[1, list([1, 2])], [2, list([[1], [2]])], [3, list([[1, 2], [3, 4], [4, 5]])], [4, list([1])], [5, list([1, 2, 3, 4, 5])]], dtype=object)
+array([[1, list([1, 2])], [2, list([[1], [2]])], [3, list([[1, 2], [3, 4], [4, 5]])], [4, list([1])], [5, list([1, 2, 3, 10, 5])]], dtype=object)
+
+
+20) A 2-dimensional array with 3 rows and 3 columns containing random numbers from 1 to 9 is given as - arr1= np.array([[3,2,1],[6,4,5],[8,7,9]]) Find the difference between the maximum element across the columns and the minimum element across the rows.
+[7 3 1]
+[8 3 2]
+[7 3 2]
+[7 1 2]
+
+
+
+
+21) The command to find the number of elements in the following array “N” is N=np.array([ 99 , None , 49 , Nan, str , np.nan ,63 , 50 ,( ) ,[ ] ,{ }, ....]).
+N.size()
+np.size(N)
+LEN(N)
+N.count()
+
+
+22) The output of the code given below is: List =[3,9,12,15] a=(x**3 for x in list) print(next(a))
+12
+9
+27
+81
+A)The next(a) function call retrieves the first value from the generator expression, which is 3**3 (27). So, the output of print(next(a)) is indeed 27
+
+
+23) Create a sequence number from 13 to 22 and increment by 4 .What is the index element 17?
+1
+0
+2
+3
+
+
+
+
+
+
+
+
+24) Consider a variable job=”analyst”.Which of the following expression(s) will retrieve the last from the string?
+JOB[LEN(JOB)-1]
+job[7]
+JOB[-1]
+job[5:6]
+
+
+25) Given a NumPy array , arr=np.array( [ [6,9,12] , [8,3,7] , [9,8,0] ] ) Find the correct command from the following options to get an output array as [27 18 17]?
+np.sum(arr,axis=0)
+None of the options are correct
+np.sum(arr,axis=1)
+np.sum(arr)
